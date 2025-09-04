@@ -1,0 +1,95 @@
+/**
+ * Main Stylesheet for Breaking Bad Quotes Generator
+ * @stylesheet main.css
+ * @description Primary styles for quote box component and animations
+ */
+@import 'https://fonts.googleapis.com/css?family=Raleway:200';
+
+/* CSS Custom Properties for theming */
+:root {
+  /* Color palette for background themes */
+  --dark-blue: rgb(44, 62, 80);
+  --purple: rgb(155, 89, 182);
+  --light-red: rgb(251, 105, 100);
+  --dark-red: rgb(231, 76, 60);
+  --khaki: rgb(189, 187, 153);
+  --dark-brown: rgb(71, 46, 50);
+  --green: rgb(115, 168, 87);
+  --x-light-green: rgb(119, 177, 169);
+  --deep-green: rgb(39, 174, 96);
+
+  /* Typography */
+  --text-font: 'Raleway', sans-serif;
+}
+
+/* Utility class for smooth transitions */
+.transition {
+  transition: all 500ms linear;
+}
+
+/* Visibility classes for fade animations */
+.invisible {
+  opacity: 0;
+  transition: all 500ms linear;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+/* Main quote container */
+.wrapper {
+  width: 450px;
+  max-width: 450px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 50px;
+  height: auto;
+  border-radius: 3px;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Quote text styling */
+.wrapper__quote {
+  text-align: center;
+  font-family: var(--text-font);
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-weight: 800;
+  flex-grow: 1;
+}
+
+/* Author attribution styling */
+.wrapper__author {
+  text-align: right;
+  font-family: var(--text-font);
+  font-weight: 500;
+  margin: 0 0 30px 0;
+  min-height: 24px;
+}
+
+/* Button container */
+.wrapper-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* New quote button styling */
+.wrapper__button {
+  font-family: var(--text-font);
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  outline: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  opacity: 1;
+  cursor: pointer;
+}
