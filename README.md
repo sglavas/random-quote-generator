@@ -4,6 +4,8 @@
 
 A random quote generator built with React that fetches quotes from the <a href="https://github.com/shevabam/breaking-bad-quotes">Breaking Bad Quotes API</a> and displays them with smooth transitions, dynamic background colors, and Twitter sharing.
 
+If you would like to, you can check out my <a href="https://delightful-choux-b64326.netlify.app/">live demo</a>.
+
 ---
 
 ## Features
